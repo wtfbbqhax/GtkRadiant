@@ -6,6 +6,25 @@ This directory provides packaging steps for GtkRadiant for OSX. This document de
 Dependencies & Compilation
 --------------------------
 
+Directions for OSX 10.11:
+
+- Install [Homebrew](http://brew.sh/)
+- Install [XQuartz](http://xquartz.macosforge.org/)
+
+```bash
+brew install pkgconfig gtkglext scons
+```
+
+
+```bash
+git clone https://github.com/TTimo/GtkRadiant.git
+cd GtkRadiant/
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig 
+scons
+```
+
+---
+
 Directions for OSX Mavericks 10.9 - your mileage may vary:
 
 - Install [MacPorts](http://macports.org).
